@@ -245,13 +245,19 @@
 
 
             <ul>
-                <li class="clickable active"><a href="<?BASE_URL?>newsarticles">Esileht</a></li>
 
-                <li class="clickable "><a href="<?BASE_URL?>guide">Ostujuhis</a></li>
-
-                <li class="clickable "><a href="<?BASE_URL?>contacts">Kontakt</a></li>
-
-                <li class="clickable "><a href="<?BASE_URL?>content_documents">Müügipunktid</a></li>
+                <a href="<?= BASE_URL ?>newsarticles">
+                    <li class="clickable <?= $controller == 'newsarticles' ? 'active' : '' ?>">Esileht
+                </a>
+                <a href="<?= BASE_URL ?>guide">
+                    <li class="clickable <?= $controller == 'guide' ? 'active' : '' ?>">Ostujuhis
+                </a>
+                <a href="<?= BASE_URL ?>contacts">
+                    <li class="clickable <?= $controller == 'contacts' ? 'active' : '' ?>">Kontakt
+                </a>
+                <a href="<?= BASE_URL ?>content_documents">
+                    <li class="clickable <?= $controller == 'content_documents' ? 'active' : '' ?>">Müügipunktid
+                </a>
 
             </ul>
 			<div style="clear: both"></div>
