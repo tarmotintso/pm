@@ -241,17 +241,16 @@
 		<div id="menu">
 
 
-			<ul>
-				<li class="clickable active"><a href="https://www.piletimaailm.com/newsarticles">Esileht</a></li>
+            <ul>
+                <li class="clickable active"><a href="<?BASE_URL?>newsarticles">Esileht</a></li>
 
+                <li class="clickable "><a href="<?BASE_URL?>guide">Ostujuhis</a></li>
 
-                <li class="clickable "><a href="<?= BASE_URL ?>guide">Ostujuhis</a></li>
+                <li class="clickable "><a href="<?BASE_URL?>contacts">Kontakt</a></li>
 
-                <li class="clickable "><a href="<?= BASE_URL ?>contacts">Kontakt</a></li>
+                <li class="clickable "><a href="<?BASE_URL?>content_documents">Müügipunktid</a></li>
 
-                <li class="clickable "><a href="https://www.piletimaailm.com/content_documents/14">Müügipunktid</a></li>
-
-			</ul>
+            </ul>
 			<div style="clear: both"></div>
 
 		</div>

@@ -24,10 +24,6 @@
     <script src="assets/components/javascripts/calendar-et.js" type="text/javascript"></script>
 
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600&subset=latin,cyrillic'
-          rel='stylesheet' type='text/css'>
-    <script language='JavaScript' type='text/javascript' src='https://www.piletimaailm.com/openads/adx.js'></script>
-
     <!-- GOOGLE ANALYTICS -->
     <script type="text/javascript">
 
