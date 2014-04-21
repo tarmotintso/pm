@@ -17,15 +17,15 @@
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="/javascripts/jquery-1-11-0.js?1395698490" type="text/javascript"></script>
-	<script src="/javascripts/jquery-ui-1-10-03-custom.js?1395698490" type="text/javascript"></script>
-	<script src="/javascripts/shop_base_1395698490.js?1395698496" type="text/javascript"></script>
+    <script src="assets/components/javascripts/jquery-1-11-0.js" type="text/javascript"></script>
+    <script src="assets/components/javascripts/jquery-ui-1-10-03-custom.js" type="text/javascript"></script>
+    <script src="assets/components/javascripts/shop_base_1395698490.js" type="text/javascript"></script>
 
-	<script src="/javascripts/calendar-et.js?1395698490" type="text/javascript"></script>
+    <script src="assets/components/javascripts/calendar-et.js" type="text/javascript"></script>
 
 
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600&subset=latin,cyrillic'
-		  rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
 	<script language='JavaScript' type='text/javascript' src='https://www.piletimaailm.com/openads/adx.js'></script>
 
 	<!-- GOOGLE ANALYTICS -->
