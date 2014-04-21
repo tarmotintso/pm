@@ -24,6 +24,9 @@
 		}
 	</style>
 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <script language='JavaScript' type='text/javascript' src='https://www.piletimaailm.com/openads/adx.js'></script>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
