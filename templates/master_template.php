@@ -60,8 +60,8 @@
 <div class="col-md-2 col-xs-12" id="organisers">
 	<div id="logo-mobile-menu-container" class="row">
 		<div id="logo" class="col-md-2 col-sm-6 col-xs-6"><a href="/"><img alt="Logo" border="0"
-																		   src="/images/shop/logo.png?1395698490"/></a>
-		</div>
+                                                                           src="assets/img/logo.png"/></a>
+        </div>
 		<div id="mobile_menu_button" class="col-xs-6 col-sm-6">
 			<a href="#" id="btn_love"><i class="icon-heart icon-2x"></i></a>
 			<a href="#" id="btn_menu"><i class="icon-search icon-2x"></i></a>
