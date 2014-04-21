@@ -245,7 +245,7 @@
 				<li class="clickable active"><a href="https://www.piletimaailm.com/newsarticles">Esileht</a></li>
 
 
-				<li class="clickable "><a href="https://www.piletimaailm.com/content_documents/11">Ostujuhis</a></li>
+                <li class="clickable "><a href="<?= BASE_URL ?>guide">Ostujuhis</a></li>
 
                 <li class="clickable "><a href="<?= BASE_URL ?>contacts">Kontakt</a></li>
 
