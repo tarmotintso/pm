@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="<?= BASE_URL ?>">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+	<base href="<?= BASE_URL ?>">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title><?= PROJECT_NAME ?></title>
+	<title><?= PROJECT_NAME ?></title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/components/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="assets/components/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
 	<!--	Piletimaailm CSS-->
-	<link href="assets/components/shop_base_1395698490.css" media="screen" rel="Stylesheet" type="text/css" />
+	<link href="assets/components/shop_base_1395698490.css" media="screen" rel="Stylesheet" type="text/css"/>
 
-    <!-- Custom styles for this template -->
-    <style>
-        body {
-            min-height: 2000px !important;
-            padding-top: 70px;
-        }
-    </style>
+	<!-- Custom styles for this template -->
+	<style>
+		body {
+			min-height: 2000px !important;
+			padding-top: 70px;
+		}
+	</style>
 
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
 
 </head>
 
 <body>
 
 <!-- Languagebar -->
+
+
+<div class="container" id="blur-here">
 <div id="set_language_row" class="row">
 	<div id="set_language" class="col-md-12">
 		<div id="language_list">
@@ -53,258 +56,269 @@
 	</div>
 </div>
 
-
-	<span class="container" id="blur-here">
-
-
-		<div class="row" id="content-row">
-			<div class="col-md-2 col-xs-12" id="organisers">
-				<div id="logo-mobile-menu-container" class="row">
-					<div id="logo" class="col-md-2 col-sm-6 col-xs-6"><a href="/"><img alt="Logo" border="0" src="/images/shop/logo.png?1395698490" /></a></div>
-					<div id="mobile_menu_button" class="col-xs-6 col-sm-6">
-						<a href="#" id="btn_love"><i class="icon-heart icon-2x"></i></a>
-						<a href="#" id="btn_menu"><i class="icon-search icon-2x"></i></a>
-						<a href="#" id="btn_info"><i class="icon-info-sign icon-2x"></i></a>
-						<a href="#" id="btn_languages"><i class="icon-flag icon-2x"></i></a>
-					</div>
-				</div>
-				<div id="mobile_container"></div>
-
-				<div id="catalog_container">
-
-
-					<h1 class="show-items">Teatrid ja korraldajad</h1>
-
-					<div id="theatres" class="hide-items">
-						<ul class="theatres">
-
-							<li class="clickable  " id="menu_1">
-								<a href="#">Eesti kontsert</a>
-							</li>
-
-							<li class="clickable level2 " id="menu_2">
-								<a href="https://www.piletimaailm.com/organizers/8-tallinn">Tallinn</a>
-							</li>
-
-							<li class="clickable level2 " id="menu_3">
-								<a href="https://www.piletimaailm.com/organizers/9-tartu">Tartu</a>
-							</li>
-
-							<li class="clickable level2 " id="menu_4">
-								<a href="https://www.piletimaailm.com/organizers/10-parnu">Pärnu</a>
-							</li>
-
-							<li class="clickable level2 " id="menu_5">
-								<a href="https://www.piletimaailm.com/organizers/11-johvi">Jõhvi</a>
-							</li>
-
-							<li class="clickable  " id="menu_6">
-								<a href="https://www.piletimaailm.com/organizers/14-rahvusooper-estonia">Rahvusooper Estonia</a>
-							</li>
-
-							<li class="clickable  " id="menu_7">
-								<a href="https://www.piletimaailm.com/organizers/7-eesti-draamateater">Eesti Draamateater</a>
-							</li>
-
-							<li class="clickable  " id="menu_8">
-								<a href="https://www.piletimaailm.com/organizers/15-no99">NO99</a>
-							</li>
-
-							<li class="clickable level2 " id="menu_49">
-								<a href="https://www.piletimaailm.com/organizers/473-jazziklubi">Jazziklubi</a>
-							</li>
-
-							<li class="clickable  " id="menu_9">
-								<a href="https://www.piletimaailm.com/organizers/12-endla-teater">Endla Teater</a>
-							</li>
-
-							<li class="clickable  " id="menu_10">
-								<a href="https://www.piletimaailm.com/organizers/18-ugala-teater">Ugala Teater</a>
-							</li>
-
-							<li class="clickable  " id="menu_11">
-								<a href="https://www.piletimaailm.com/organizers/17-rakvere-teater">Rakvere Teater</a>
-							</li>
-
-							<li class="clickable  " id="menu_12">
-								<a href="https://www.piletimaailm.com/organizers/13-teater-vanemuine">Teater Vanemuine </a>
-							</li>
-
-							<li class="clickable  " id="menu_13">
-								<a href="https://www.piletimaailm.com/organizers/70-vana-baskini-teater">Vana Baskini Teater</a>
-							</li>
-
-							<li class="clickable  " id="menu_15">
-								<a href="https://www.piletimaailm.com/organizers/26-theatrum">Theatrum</a>
-							</li>
-
-							<li class="clickable  " id="menu_16">
-								<a href="https://www.piletimaailm.com/organizers/34-vat-teater">VAT Teater</a>
-							</li>
-
-							<li class="clickable  " id="menu_17">
-								<a href="https://www.piletimaailm.com/organizers/154-raaam">R.A.A.A.M.</a>
-							</li>
-
-							<li class="clickable  " id="menu_18">
-								<a href="https://www.piletimaailm.com/organizers/151-kuressaare-linnateater">Kuressaare Linnateater</a>
-							</li>
-
-							<li class="clickable  " id="menu_50">
-								<a href="https://www.piletimaailm.com/organizers/143-vene-teater">Vene Teater</a>
-							</li>
-
-							<li class="clickable  " id="menu_21">
-								<a href="https://www.piletimaailm.com/organizers/150-komoodiateater">Komöödiateater</a>
-							</li>
-
-							<li class="clickable  " id="menu_73">
-								<a href="https://www.piletimaailm.com/organizers/456-tartu-uus-teater">Tartu Uus Teater</a>
-							</li>
-
-							<li class="clickable  " id="menu_33">
-								<a href="https://www.piletimaailm.com/organizers/406-von-krahli-teater">Von Krahli Teater</a>
-							</li>
-
-							<li class="clickable  " id="menu_38">
-								<a href="https://www.piletimaailm.com/organizers/161-erso">ERSO</a>
-							</li>
-
-							<li class="clickable  " id="menu_58">
-								<a href="https://www.piletimaailm.com/organizers/144-emajoe-suveteater">Emajõe Suveteater </a>
-							</li>
-
-							<li class="clickable  " id="menu_60">
-								<a href="https://www.piletimaailm.com/organizers/235-parnu-ooper">Pärnu Ooper</a>
-							</li>
-
-							<li class="clickable  " id="menu_68">
-								<a href="https://www.piletimaailm.com/organizers/352-projektiteater-kell-kumme">Projektiteater Kell Kümme</a>
-							</li>
-
-							<li class="clickable  " id="menu_71">
-								<a href="https://www.piletimaailm.com/organizers/581-tallinna-teletorn">Tallinna Teletorn</a>
-							</li>
-
-							<li class="clickable  " id="menu_77">
-								<a href="https://www.piletimaailm.com/organizers/16-paide-kultuurikeskus">Paide Kultuurikeskus</a>
-							</li>
-
-							<li class="clickable  " id="menu_97">
-								<a href="https://www.piletimaailm.com/organizers/683-kose-kultuurikeskus">Kose Kultuurikeskus</a>
-							</li>
-
-							<li class="clickable  " id="menu_81">
-								<a href="https://www.piletimaailm.com/organizers/502-parnu-linnaorkester">Pärnu Linnaorkester</a>
-							</li>
-
-							<li class="clickable  " id="menu_88">
-								<a href="https://www.piletimaailm.com/organizers/162-t-teater">T-Teater</a>
-							</li>
-
-							<li class="clickable  " id="menu_91">
-								<a href="https://www.piletimaailm.com/organizers/626-tallinna-kammerteater">Tallinna Kammerteater</a>
-							</li>
-
-							<li class="clickable  " id="menu_93">
-								<a href="https://www.piletimaailm.com/organizers/142-viljandi-laste-ja-noorteteater-reky">Viljandi Laste- ja Noorteteater “REKY”</a>
-							</li>
-
-							<li class="clickable  " id="menu_94">
-								<a href="https://www.piletimaailm.com/organizers/431-tallinna-tantsuteater">Tallinna Tantsuteater</a>
-							</li>
-
-							<li class="clickable  " id="menu_96">
-								<a href="https://www.piletimaailm.com/organizers/627-mtu-seasaare-naitemangu-selts">MTÜ Seasaare Näitemängu Selts</a>
-							</li>
-
-							<li class="clickable  " id="menu_98">
-								<a href="https://www.piletimaailm.com/organizers/362-polygon-teater">Polygon Teater</a>
-							</li>
-
-						</ul>
-					</div>
-				</div>
-
-
-			</div>
-
-			<div class="col-md-7 col-xs-12" id="content-column">
-				<div id="menu_container">
-					<div id="menu">
-
-
-						<ul>
-							<li class="clickable active"><a href="https://www.piletimaailm.com/newsarticles">Esileht</a></li>
-
-
-							<li class="clickable "><a href="https://www.piletimaailm.com/content_documents/11">Ostujuhis</a></li>
-
-							<li class="clickable "><a href="https://www.piletimaailm.com/content_documents/887">Kontakt</a></li>
-
-							<li class="clickable "><a href="https://www.piletimaailm.com/content_documents/14">Müügipunktid</a></li>
-
-						</ul>
-						<div style="clear: both"></div>
-
-					</div>
-				</div>
-
-
-				<!-- Main component for a primary marketing message or call to action -->
-		<? if (!file_exists("views/$controller/{$controller}_$action.php")) error_out('The view <i>views/' . $controller . '/' . $controller . '_' . $action . '.php</i> does not exist. Create that file.'); ?>
-		<? @require "views/$controller/{$controller}_$action.php"; ?>
+<div class="row" id="content-row">
+<div class="col-md-2 col-xs-12" id="organisers">
+	<div id="logo-mobile-menu-container" class="row">
+		<div id="logo" class="col-md-2 col-sm-6 col-xs-6"><a href="/"><img alt="Logo" border="0"
+																		   src="/images/shop/logo.png?1395698490"/></a>
 		</div>
+		<div id="mobile_menu_button" class="col-xs-6 col-sm-6">
+			<a href="#" id="btn_love"><i class="icon-heart icon-2x"></i></a>
+			<a href="#" id="btn_menu"><i class="icon-search icon-2x"></i></a>
+			<a href="#" id="btn_info"><i class="icon-info-sign icon-2x"></i></a>
+			<a href="#" id="btn_languages"><i class="icon-flag icon-2x"></i></a>
+		</div>
+	</div>
+	<div id="mobile_container"></div>
+
+	<div id="catalog_container">
+
+
+		<h1 class="show-items">Teatrid ja korraldajad</h1>
+
+		<div id="theatres" class="hide-items">
+			<ul class="theatres">
+
+				<li class="clickable  " id="menu_1">
+					<a href="#">Eesti kontsert</a>
+				</li>
+
+				<li class="clickable level2 " id="menu_2">
+					<a href="https://www.piletimaailm.com/organizers/8-tallinn">Tallinn</a>
+				</li>
+
+				<li class="clickable level2 " id="menu_3">
+					<a href="https://www.piletimaailm.com/organizers/9-tartu">Tartu</a>
+				</li>
+
+				<li class="clickable level2 " id="menu_4">
+					<a href="https://www.piletimaailm.com/organizers/10-parnu">Pärnu</a>
+				</li>
+
+				<li class="clickable level2 " id="menu_5">
+					<a href="https://www.piletimaailm.com/organizers/11-johvi">Jõhvi</a>
+				</li>
+
+				<li class="clickable  " id="menu_6">
+					<a href="https://www.piletimaailm.com/organizers/14-rahvusooper-estonia">Rahvusooper Estonia</a>
+				</li>
+
+				<li class="clickable  " id="menu_7">
+					<a href="https://www.piletimaailm.com/organizers/7-eesti-draamateater">Eesti Draamateater</a>
+				</li>
+
+				<li class="clickable  " id="menu_8">
+					<a href="https://www.piletimaailm.com/organizers/15-no99">NO99</a>
+				</li>
+
+				<li class="clickable level2 " id="menu_49">
+					<a href="https://www.piletimaailm.com/organizers/473-jazziklubi">Jazziklubi</a>
+				</li>
+
+				<li class="clickable  " id="menu_9">
+					<a href="https://www.piletimaailm.com/organizers/12-endla-teater">Endla Teater</a>
+				</li>
+
+				<li class="clickable  " id="menu_10">
+					<a href="https://www.piletimaailm.com/organizers/18-ugala-teater">Ugala Teater</a>
+				</li>
+
+				<li class="clickable  " id="menu_11">
+					<a href="https://www.piletimaailm.com/organizers/17-rakvere-teater">Rakvere Teater</a>
+				</li>
+
+				<li class="clickable  " id="menu_12">
+					<a href="https://www.piletimaailm.com/organizers/13-teater-vanemuine">Teater Vanemuine </a>
+				</li>
+
+				<li class="clickable  " id="menu_13">
+					<a href="https://www.piletimaailm.com/organizers/70-vana-baskini-teater">Vana Baskini Teater</a>
+				</li>
+
+				<li class="clickable  " id="menu_15">
+					<a href="https://www.piletimaailm.com/organizers/26-theatrum">Theatrum</a>
+				</li>
+
+				<li class="clickable  " id="menu_16">
+					<a href="https://www.piletimaailm.com/organizers/34-vat-teater">VAT Teater</a>
+				</li>
+
+				<li class="clickable  " id="menu_17">
+					<a href="https://www.piletimaailm.com/organizers/154-raaam">R.A.A.A.M.</a>
+				</li>
+
+				<li class="clickable  " id="menu_18">
+					<a href="https://www.piletimaailm.com/organizers/151-kuressaare-linnateater">Kuressaare
+						Linnateater</a>
+				</li>
+
+				<li class="clickable  " id="menu_50">
+					<a href="https://www.piletimaailm.com/organizers/143-vene-teater">Vene Teater</a>
+				</li>
+
+				<li class="clickable  " id="menu_21">
+					<a href="https://www.piletimaailm.com/organizers/150-komoodiateater">Komöödiateater</a>
+				</li>
+
+				<li class="clickable  " id="menu_73">
+					<a href="https://www.piletimaailm.com/organizers/456-tartu-uus-teater">Tartu Uus Teater</a>
+				</li>
+
+				<li class="clickable  " id="menu_33">
+					<a href="https://www.piletimaailm.com/organizers/406-von-krahli-teater">Von Krahli Teater</a>
+				</li>
+
+				<li class="clickable  " id="menu_38">
+					<a href="https://www.piletimaailm.com/organizers/161-erso">ERSO</a>
+				</li>
+
+				<li class="clickable  " id="menu_58">
+					<a href="https://www.piletimaailm.com/organizers/144-emajoe-suveteater">Emajõe Suveteater </a>
+				</li>
+
+				<li class="clickable  " id="menu_60">
+					<a href="https://www.piletimaailm.com/organizers/235-parnu-ooper">Pärnu Ooper</a>
+				</li>
+
+				<li class="clickable  " id="menu_68">
+					<a href="https://www.piletimaailm.com/organizers/352-projektiteater-kell-kumme">Projektiteater Kell
+						Kümme</a>
+				</li>
+
+				<li class="clickable  " id="menu_71">
+					<a href="https://www.piletimaailm.com/organizers/581-tallinna-teletorn">Tallinna Teletorn</a>
+				</li>
+
+				<li class="clickable  " id="menu_77">
+					<a href="https://www.piletimaailm.com/organizers/16-paide-kultuurikeskus">Paide Kultuurikeskus</a>
+				</li>
+
+				<li class="clickable  " id="menu_97">
+					<a href="https://www.piletimaailm.com/organizers/683-kose-kultuurikeskus">Kose Kultuurikeskus</a>
+				</li>
+
+				<li class="clickable  " id="menu_81">
+					<a href="https://www.piletimaailm.com/organizers/502-parnu-linnaorkester">Pärnu Linnaorkester</a>
+				</li>
+
+				<li class="clickable  " id="menu_88">
+					<a href="https://www.piletimaailm.com/organizers/162-t-teater">T-Teater</a>
+				</li>
+
+				<li class="clickable  " id="menu_91">
+					<a href="https://www.piletimaailm.com/organizers/626-tallinna-kammerteater">Tallinna
+						Kammerteater</a>
+				</li>
+
+				<li class="clickable  " id="menu_93">
+					<a href="https://www.piletimaailm.com/organizers/142-viljandi-laste-ja-noorteteater-reky">Viljandi
+						Laste- ja Noorteteater “REKY”</a>
+				</li>
+
+				<li class="clickable  " id="menu_94">
+					<a href="https://www.piletimaailm.com/organizers/431-tallinna-tantsuteater">Tallinna
+						Tantsuteater</a>
+				</li>
+
+				<li class="clickable  " id="menu_96">
+					<a href="https://www.piletimaailm.com/organizers/627-mtu-seasaare-naitemangu-selts">MTÜ Seasaare
+						Näitemängu Selts</a>
+				</li>
+
+				<li class="clickable  " id="menu_98">
+					<a href="https://www.piletimaailm.com/organizers/362-polygon-teater">Polygon Teater</a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+
+</div>
+
+<div class="col-md-7 col-xs-12" id="content-column">
+	<div id="menu_container">
+		<div id="menu">
+
+
+			<ul>
+				<li class="clickable active"><a href="https://www.piletimaailm.com/newsarticles">Esileht</a></li>
+
+
+				<li class="clickable "><a href="https://www.piletimaailm.com/content_documents/11">Ostujuhis</a></li>
+
+				<li class="clickable "><a href="https://www.piletimaailm.com/content_documents/887">Kontakt</a></li>
+
+				<li class="clickable "><a href="https://www.piletimaailm.com/content_documents/14">Müügipunktid</a></li>
+
+			</ul>
+			<div style="clear: both"></div>
+
+		</div>
+	</div>
+
+
+	<!-- Main component for a primary marketing message or call to action -->
+	<? if (!file_exists("views/$controller/{$controller}_$action.php")) error_out('The view <i>views/' . $controller . '/' . $controller . '_' . $action . '.php</i> does not exist. Create that file.'); ?>
+	<? @require "views/$controller/{$controller}_$action.php"; ?>
+</div>
 
 <div class="col-md-3 col-xs-12">
 <div id="otsi">
 <div id="otsing_container">
-<form action="https://www.piletimaailm.com/performances/search" id="otsingu-vorm" method="get" style="margin:0px; padding:0px;">
+	<form action="https://www.piletimaailm.com/performances/search" id="otsingu-vorm" method="get"
+		  style="margin:0px; padding:0px;">
 
-	<div id="otsing">
-		<div id="otsing-fullname-label"  style="display: none;">
-			<h2>Ürituste otsing</h2>
-			<label style="padding-bottom: 0;">Ürituse nimi</label>
-		</div>
-
-		<input class="single-row-form-first" id="performance_full_name" name="performance[full_name_et]" placeholder="Otsi üritust" size="15" type="text" value="" /><input class="btn btn-default btn-corner button" id="otsi-fast-submit" name="commit" type="submit" value="Otsi" />
-
-		<div class="clear"></div>
-		<div id="open_advanced_search_link">
-			<a href="#">Ava detailotsing</a>
-		</div>
-
-		<div id="otsingu-valikud" style="display: none;">
-			<div class="label">Toimumise koht</div>
-
-			<input id="venue_name" name="venue[name]" size="15" type="text" />
-			<div class="clear"></div>
-
-			<div class="label">Toimub alates</div>
-			<input type="text" class="date_field" id="from_show" name="from" value="" autocomplete="false" />
-
-			<div class="clear"></div>
-
-			<div class="label">Toimub kuni</div>
-			<input type="text" class="date_field" id="to_show" name="to" value="" autocomplete="false" />
-
-			<div class="clear"></div>
-			<div class="button-box">
-				<input class="btn btn-black pull-right button" name="commit" type="submit" value="Otsi" />
-				<input type="button" value="Sulge" id="close-detailed-search" class="btn btn-default"/>
-				<input class="clear_button btn btn-default button" onclick="clear_form(&quot;div#otsing_container&quot;);" type="button" value="Tühjenda" />
+		<div id="otsing">
+			<div id="otsing-fullname-label" style="display: none;">
+				<h2>Ürituste otsing</h2>
+				<label style="padding-bottom: 0;">Ürituse nimi</label>
 			</div>
 
+			<input class="single-row-form-first" id="performance_full_name" name="performance[full_name_et]"
+				   placeholder="Otsi üritust" size="15" type="text" value=""/><input
+				class="btn btn-default btn-corner button" id="otsi-fast-submit" name="commit" type="submit"
+				value="Otsi"/>
+
 			<div class="clear"></div>
+			<div id="open_advanced_search_link">
+				<a href="#">Ava detailotsing</a>
+			</div>
+
+			<div id="otsingu-valikud" style="display: none;">
+				<div class="label">Toimumise koht</div>
+
+				<input id="venue_name" name="venue[name]" size="15" type="text"/>
+
+				<div class="clear"></div>
+
+				<div class="label">Toimub alates</div>
+				<input type="text" class="date_field" id="from_show" name="from" value="" autocomplete="false"/>
+
+				<div class="clear"></div>
+
+				<div class="label">Toimub kuni</div>
+				<input type="text" class="date_field" id="to_show" name="to" value="" autocomplete="false"/>
+
+				<div class="clear"></div>
+				<div class="button-box">
+					<input class="btn btn-black pull-right button" name="commit" type="submit" value="Otsi"/>
+					<input type="button" value="Sulge" id="close-detailed-search" class="btn btn-default"/>
+					<input class="clear_button btn btn-default button"
+						   onclick="clear_form(&quot;div#otsing_container&quot;);" type="button" value="Tühjenda"/>
+				</div>
+
+				<div class="clear"></div>
+			</div>
 		</div>
-	</div>
 </div>
 </form>
 
 <div id="marksonadega">
 <h1 class="show-items">Märksõnadega otsing</h1>
+
 <div class="hide-items">
-<div id="marksonad_short" class="marksonad"  style="display:block;">
+<div id="marksonad_short" class="marksonad" style="display:block;">
 
 	<div id="catalog">
 
@@ -325,11 +339,11 @@
 	</div>
 
 
-	<strong class="naita-peida-marksonu"><a href="#" class="naita-peida-marksonu show-more-keywords">Veel märksõnu ...</a></strong>
+	<strong class="naita-peida-marksonu"><a href="#" class="naita-peida-marksonu show-more-keywords">Veel märksõnu
+			...</a></strong>
 </div>
 
-<div id="marksonad" class="marksonad"  style="display:none;">
-
+<div id="marksonad" class="marksonad" style="display:none;">
 
 
 <a href="https://www.piletimaailm.com/tags/3077" class="tag5">estonia teater</a>
@@ -784,7 +798,6 @@
 <a href="https://www.piletimaailm.com/tags/3725" class="tag1">YUNDI</a>
 
 
-
 <br/><br/><strong><a href="#" class="show-more-keywords">Peida pikk märksõnade nimekiri</a></strong>
 </div>
 </div>
@@ -792,29 +805,39 @@
 </div>
 <div id="minu_piletimaailm" class="">
 	<h1>Minu Piletimaailm </h1>
+
 	<div class="minu_piletimaailm_items">
 
 		<div id="minu_piletimaailm_login" style="display: none">
-			<form action="/badgers" method="post">          <div id="minu_piletimaailm_login_wrapper">
-					<label class="menu">E-mail</label> <input class="menu" id="email" name="email" type="text" value="" />
-					<label class="menu">Parool</label> <input class="menu" id="password" name="password" type="password" value="" />
-					<input class="btn btn-black pull-right button" name="commit" type="submit" value="Logi sisse" />
+			<form action="/badgers" method="post">
+				<div id="minu_piletimaailm_login_wrapper">
+					<label class="menu">E-mail</label> <input class="menu" id="email" name="email" type="text"
+															  value=""/>
+					<label class="menu">Parool</label> <input class="menu" id="password" name="password" type="password"
+															  value=""/>
+					<input class="btn btn-black pull-right button" name="commit" type="submit" value="Logi sisse"/>
 				</div>
 			</form>
 			<div class="clear"></div>
 		</div>
 		<a href="#" id="minu_piletimaailm_login_link"><i class="icon-fixed-width icon-signin icon-large"></i> Logi sisse</a>
-		<a href="/password_reminders/new" class=""><i class="icon-fixed-width icon-ambulance icon-large"></i> Taasta parool</a>
-		<a href="/registrations/new" class=""><i class="icon-fixed-width icon-align-justify icon-large"></i> Registreeru kliendiks</a>
+		<a href="/password_reminders/new" class=""><i class="icon-fixed-width icon-ambulance icon-large"></i> Taasta
+			parool</a>
+		<a href="/registrations/new" class=""><i class="icon-fixed-width icon-align-justify icon-large"></i> Registreeru
+			kliendiks</a>
 
 	</div>
 </div>
 <div id="telli_uudiskiri">
 	<h1 class="show-items">Telli uudiskiri</h1>
+
 	<div class="hide-items">
 		<form action="https://www.piletimaailm.com/newsletter_subscriptions" method="post" style="margin-top: 20px;">
 			<div id="subscribe-wrapper">
-				<input class="otsifield" id="newsletter_subscription_email" name="newsletter_subscription[email]" placeholder="e-posti aadress" size="30" type="text" /><input class="btn btn-default btn-corner button" name="commit" type="submit" value="Telli" />
+				<input class="otsifield" id="newsletter_subscription_email" name="newsletter_subscription[email]"
+					   placeholder="e-posti aadress" size="30" type="text"/><input
+					class="btn btn-default btn-corner button" name="commit" type="submit" value="Telli"/>
+
 				<div class="clear"></div>
 			</div>
 		</form>
@@ -826,161 +849,201 @@
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 	<script language='JavaScript' type='text/javascript'>
 		<!--
 		if (!document.phpAds_used) document.phpAds_used = ',';
-		phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+		phpAds_random = new String(Math.random());
+		phpAds_random = phpAds_random.substring(2, 11);
 
-		document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-		document.write ("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
-		document.write ("&amp;what=zone:4&amp;target=_self&amp;block=1");
-		document.write ("&amp;exclude=" + document.phpAds_used);
+		document.write("<" + "script language='JavaScript' type='text/javascript' src='");
+		document.write("https://www.piletimaailm.com/openads/adjs.php?n=" + phpAds_random);
+		document.write("&amp;what=zone:4&amp;target=_self&amp;block=1");
+		document.write("&amp;exclude=" + document.phpAds_used);
 		if (document.referrer)
-			document.write ("&amp;referer=" + escape(document.referrer));
-		document.write ("'><" + "/script>");
+			document.write("&amp;referer=" + escape(document.referrer));
+		document.write("'><" + "/script>");
 		//-->
-	</script><noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a></noscript>
+	</script>
+	<noscript><a href='https://www.piletimaailm.com/openads/adclick.php?n=a40b42e4'><img
+				src='https://www.piletimaailm.com/openads/adview.php?what=zone:4&amp;n=a40b42e4' border='0' alt=''/></a>
+	</noscript>
 
 
 </div>
@@ -988,10 +1051,7 @@
 </div>
 
 
-
-
-
-</span>
+</div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
