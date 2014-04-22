@@ -1,15 +1,9 @@
 <div id="content">
+<div id="contentArea"><h1 class="first">Ostujuhis</h1>
 
+<div id="content_document_description"><p>Netipoe kasutamise juhend:</p>
 
-    <div id="contentArea">
-        <h1 class="first">Ostujuhis</h1>
-
-        <div id="content_document_description">
-
-
-            <p>Netipoe kasutamise juhend:</p>
-
-            <p>1. Leia otsingu või kataloogi kaudu endale meelepärane üritus.</p>
+<p>1. Leia otsingu või kataloogi kaudu endale meelepärane üritus.</p>
 
             <p>2. Vajuta nuppu "Osta".</p>
 
@@ -33,9 +27,9 @@
                 ürituse sissepääsus.<br>Netipileti võib vahetada turvamärgistusega pileti vastu Piletimaailma
                 müügipunktides.</p>
 
-            <p><strong>NB!</strong> Kui Teil ei ole võimalust printida, siis jätke meelde valitud ürituse andmed. Pileti
-                saate müügipunktist kätte, kui esitate ürituse andmed ja isikut tõendava dokumendi. <br>
-                <!--[if gte mso 9]>
+<p><strong>NB!</strong> Kui Teil ei ole võimalust printida, siis jätke meelde valitud ürituse andmed.
+Piletisaate müügipunktist kätte, kui esitate ürituse andmed ja isikut tõendava dokumendi. <br>
+<!--[if gte mso 9]>
                 <xml>
                     <o:OfficeDocumentSettings>
                         <o:AllowPNG/>
@@ -340,8 +334,8 @@
                         <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
                     </w:LatentStyles>
                 </xml><![endif]--><!--[if gte mso 10]>
-                <style>  /* Style Definitions */
-                table.MsoNormalTable {
+<style>/* Style Definitions */
+table.MsoNormalTable {
                     mso-style-name: "Table Normal";
                     mso-tstyle-rowband-size: 0;
                     mso-tstyle-colband-size: 0;
@@ -361,9 +355,9 @@
                     mso-bidi-font-family: "Times New Roman";
                     mso-bidi-theme-font: minor-bidi;
                     mso-fareast-language: EN-US;
-                } </style> <![endif]-->  </p>
+}</style><![endif]--></p>
 
-            <p class="MsoPlainText">Piletimaailm ostetud pileteid tagasi ei osta ja ümber ei vaheta, juhul, kui ei ole
+<p class="MsoPlainText">Piletimaailm ostetud pileteid tagasi ei osta ja ümber ei vaheta, juhul, kui ei ole
                 teatatud teisiti.</p>
 
             <p>Lukustatud, kuid ostmata kohad vabanevad süsteemis umbes 50 minuti jooksul.</p>
@@ -385,9 +379,6 @@
 
             <p><strong>e-post: piletimaailm@piletimaailm.com</strong></p>
 
-            <p><strong>Pärnu mnt. 5, Tallinn 10148</strong></p>
-        </div>
-
-
-    </div>
+<p><strong>Pärnu mnt. 5, Tallinn 10148</strong></p></div>
+</div>
 </div>
