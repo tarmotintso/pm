@@ -391,11 +391,11 @@
             <div class="clear"></div>
         </div>
         <a href="#" id="minu_piletimaailm_login_link"><i
-                class="icon-fixed-width icon-signin icon-large"></i> Logi sisse</a><a
+                class="glyphicon glyphicon-log-in"></i> Logi sisse</a><a
             href="/password_reminders/new" class=""><i
-                class="icon-fixed-width icon-ambulance icon-large"></i> Taasta parool</a><a
+                class="glyphicon glyphicon-new-window"></i> Taasta parool</a><a
             href="/registrations/new" class=""><i
-                class="icon-fixed-width icon-align-justify icon-large"></i> Registreeru kliendiks</a></div>
+                class="glyphicon glyphicon-align-justify"></i> Registreeru kliendiks</a></div>
 </div>
 <div id="telli_uudiskiri"><h1 class="show-items">Telli uudiskiri</h1>
 
