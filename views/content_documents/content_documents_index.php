@@ -6,13 +6,12 @@
 
     <p>
                 <a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=110546903339823143865.000451823877940bb167b&ll=58.756805,24.829102&spn=3.796256,8.602295&z=7"
-                   target="_blank"><img src="./Müügipunktid Piletimaailm Online_files/piletimaailm.png" border="0"
+                   target="_blank"><img src="assets/img/piletimaailm.png" border="0"
                                         alt="kaart" title="Müügikohtade kaart" width="420" height="261"></a></p>
 
     <p>&nbsp;</p>
 
-            <p>&nbsp;</p><a
-                href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=110546903339823143865.000451823877940bb167b&ll=58.756805,24.829102&spn=3.796256,8.602295&z=7"></a>
+            <p>&nbsp;</p>
         </div>
         <div><h1><strong>Tallinn</strong></h1>
 
