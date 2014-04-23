@@ -392,9 +392,9 @@
         </div>
         <a href="#" id="minu_piletimaailm_login_link"><i
                 class="glyphicon glyphicon-log-in"></i> Logi sisse</a><a
-            href="/password_reminders/new" class=""><i
+            href="password_reminders" class=""><i
                 class="glyphicon glyphicon-new-window"></i> Taasta parool</a><a
-            href="/registrations/new" class=""><i
+            href="registrations" class=""><i
                 class="glyphicon glyphicon-align-justify"></i> Registreeru kliendiks</a></div>
 </div>
 <div id="telli_uudiskiri"><h1 class="show-items">Telli uudiskiri</h1>
