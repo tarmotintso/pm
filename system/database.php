@@ -28,13 +28,12 @@ function q($sql, & $query_pointer = NULL, $debug = FALSE)
 	switch (substr($sql, 0, 6)) {
 		case 'SELECT':
 			exit("q($sql): Please don't use q() for SELECTs, use get_one() or get_first() or get_all() instead.");
-		case 'INSE':
-			debug_print_backtrace();
+		case '#INSE':
 			exit("q($sql): Please don't use q() for INSERTs, use insert() instead.");
 		case 'UPDA':
 			exit("q($sql): Please don't use q() for UPDATEs, use update() instead.");
 		default:
-			return pg_affected_rows($db);
+			return pg_affected_rows($query_pointer);
 	}
 }
 
@@ -71,6 +70,17 @@ function get_first($sql)
 	$q = pg_query($db, $sql) or db_error_out();
 	$first_row = pg_fetch_assoc($q);
 	return empty($first_row) ? array() : $first_row;
+}
+
+function get_col($sql, $col_nr = 0, $debug=false)
+{
+	global $db;
+	if ($debug) {
+		print "<pre>$sql</pre>";
+	}
+	$q = pg_query($db, $sql) or db_error_out();
+	$col = pg_fetch_all_columns($q, $col_nr);
+	return empty($col) ? array() : $col;
 }
 
 function db_error_out()
@@ -113,7 +123,7 @@ function db_error_out()
 		echo strip_tags($output);
 	} else {
 		$errors[] = $output;
-		require 'templates/error_template.php';
+		require '../templates/error_template.php';
 	}
 	die();
 
