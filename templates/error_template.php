@@ -20,7 +20,7 @@
             </div>
         <? endforeach; ?>
     <? elseif (isset($error_file_name_or_msg)): ?>
-        <? require 'views/errors/' . $error_file_name_or_msg . '_error_view.php' ?>
+        <? require 'views/alerts/' . $error_file_name_or_msg . '_error_view.php' ?>
     <?
     else: ?>
         Tundmatu viga!

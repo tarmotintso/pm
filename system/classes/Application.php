@@ -66,7 +66,10 @@ class Application
             // Check for and process POST ( executes $action_post() )
             if (isset($_POST) && !empty($_POST) && method_exists($controller, $controller->action . '_post')) {
                 $action_name = $controller->action . '_post';
-                $controller->$action_name();
+                if (!$controller->skip_main_action)
+                {
+                    $controller->$action_name();
+                }
             }
 
             // Proceed with regular action processing ( executes $action() )

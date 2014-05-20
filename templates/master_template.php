@@ -8,7 +8,6 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
     <title><?= PROJECT_NAME ?></title>
-    <link href="assets/components/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/components/shop_base_1395698490.css" media="screen" rel="Stylesheet" type="text/css"/>
     <style>body {
             min-height: 2000px !important;
@@ -156,7 +155,11 @@
                 </a></ul>
             <div style="clear: both"></div>
         </div>
-    </div><? if (!file_exists("views/$controller/{$controller}_$action.php")) error_out('The view <i>views/' . $controller . '/' . $controller . '_' . $action . '.php</i> does not exist. Create that file.'); ?><? @require "views/$controller/{$controller}_$action.php"; ?>
+    </div>
+    <div id="content">
+        <? if (!file_exists("views/$controller/{$controller}_$action.php")) error_out('The view <i>views/' . $controller . '/' . $controller . '_' . $action . '.php</i> does not exist. Create that file.'); ?>
+        <? @require "views/$controller/{$controller}_$action.php"; ?>
+    </div>
 </div>
 <div class="col-md-3 col-xs-12">
 <div id="otsi">
@@ -394,7 +397,7 @@
                 class="glyphicon glyphicon-log-in"></i> Logi sisse</a><a
             href="password_reminders" class=""><i
                 class="glyphicon glyphicon-new-window"></i> Taasta parool</a><a
-            href="registrations" class=""><i
+            href="registrations/form" class=""><i
                 class="glyphicon glyphicon-align-justify"></i> Registreeru kliendiks</a></div>
 </div>
 <div id="telli_uudiskiri"><h1 class="show-items">Telli uudiskiri</h1>
@@ -548,6 +551,5 @@
 </div>
 <!-- Bootstrap core JavaScript==================================================-->
 <script src="assets/components/jquery/1.10.2/jquery-1.10.2.min.js"></script>
-<script src="assets/components/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1156,7 +1156,6 @@ div.hinna-rida .hind {display: inline; float: left}
 #errorExplanation p, #errorExplanation li {font-size: 20px; font-weight: 100}
 #errorExplanation h2 {margin-top: 0px}
 .flash_error, #errorExplanation, #time_out_message {background-color: #FC4200; color: #fff}
-#checkout-content .flash_notice, #checkout-content .flash_error, #checkout-content #errorExplanation {margin-left: -20px; margin-right: 0px; margin-bottom: 20px}
 .saaliplaan {position: absolute}
 #kohavalik {z-index: 9000}
 #kohavalik h1 {color: #333}
@@ -1430,7 +1429,7 @@ form.lahe-vorm.small {padding-left: 0px}
 #progress-bar {margin: 0px; padding: 10px 20px; font-size: 14px; line-height: normal}
 #banner-container {margin-top: 0px; background-color: #7bcb08; height: 53px; line-height: 53px}
 #progress-bar span {color: #333}
-#checkout-content .flash_notice, #checkout-content .flash_error, #checkout-content #errorExplanation {margin-right: -20px}
+#checkout-content .flash_notice, #checkout-content .flash_error, #checkout-content #errorExplanation {margin-right: -10px}
 #containers {margin-left: -10px; margin-right: -10px; background-color: #fff}
 }
 @media (max-width: 768px) {#logo {width: 150px; max-width: 150px}

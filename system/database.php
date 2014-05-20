@@ -138,16 +138,12 @@ function insert($table, $data)
 {
 	global $db;
 	if ($table and is_array($data) and !empty($data)) {
+        $columns = implode(',',array_keys($data));
 		$values = implode(',', escape($data));
-		$sql = "INSERT INTO `{$table}` SET {$values} ON DUPLICATE KEY UPDATE {$values}";
-		$q = pg_query($db, $sql) or db_error_out();
-		$result = pg_query($db, $sql);
-		$insert_row = pg_fetch_row($result);
-		$id = $insert_row[0];
-		return ($id > 0) ? $id : FALSE;
-	} else {
-		return FALSE;
-	}
+        $sql = "INSERT INTO {$table} ($columns) VALUES ($values)";
+        $result = pg_query($db, $sql) or db_error_out();
+		return TRUE;
+	} ELSE return FALSE;
 }
 
 function update($table, array $data, $where)
@@ -175,11 +171,11 @@ function escape(array $data)
 	if (!empty($data)) {
 		foreach ($data as $field => $value) {
 			if ($value === NULL) {
-				$values[] = "`$field`=NULL";
+				$values[] = "";
 			} elseif (is_array($value) && isset($value['no_escape'])) {
-				$values[] = "`$field`=" . pg_escape_literal($db, $value['no_escape']);
+				$values[] = pg_escape_literal($db, $value['no_escape']);
 			} else {
-				$values[] = "`$field`='" . pg_escape_literal($db, $value) . "'";
+				$values[] = pg_escape_literal($db, $value);
 			}
 		}
 	}
