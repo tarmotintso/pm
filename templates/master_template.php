@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?
+require 'controllers/language.php';
+?>
 <head>
     <base href="<?= BASE_URL ?>">
     <meta charset="utf-8">
@@ -23,8 +26,9 @@
 <div class="container" id="blur-here">
 <div id="set_language_row" class="row">
     <div id="set_language" class="col-md-12">
-        <div id="language_list"><a href="/?lang=et_EE">eesti keeles</a><a href="/?lang=ru_RU">по русски</a><a
-                href="/?lang=fi_FI">suomeksi</a><a href="/?lang=en_US">in english</a>
+        <div id="language_list"><a href="<?= BASE_URL ?>?lang=et_EE">eesti keeles</a><a
+                href="<?= BASE_URL ?>?lang=ru_RU">по русски</a><a
+                href="<?= BASE_URL ?>?lang=fi_FI">suomeksi</a><a href="<?= BASE_URL ?>?lang=en_US">in english</a>
 
             <div class="clear"></div>
         </div>
@@ -145,7 +149,7 @@
     <div id="menu_container">
         <div id="menu">
             <ul><a href="<?= BASE_URL ?>newsarticles">
-                    <li class="clickable <?= $controller == 'newsarticles' ? 'active' : '' ?>">Esileht
+                    <li class="clickable <?= $controller == 'newsarticles' ? 'active' : '' ?>"><?= $w->translate("Esileht") ?>
                 </a><a href="<?= BASE_URL ?>guide">
                     <li class="clickable <?= $controller == 'guide' ? 'active' : '' ?>">Ostujuhis
                 </a><a href="<?= BASE_URL ?>contacts">
@@ -394,27 +398,31 @@
             <div class="clear"></div>
         </div>
         <a href="#" id="minu_piletimaailm_login_link"><i
-                class="glyphicon glyphicon-log-in"></i> Logi sisse</a><a
+                class="glyphicon glyphicon-log-in"></i> <?= $w->translate("Logi sisse");?> </a><a
             href="password_reminders" class=""><i
-                class="glyphicon glyphicon-new-window"></i> Taasta parool</a><a
-            href="registrations/form" class=""><i
-                class="glyphicon glyphicon-align-justify"></i> Registreeru kliendiks</a></div>
+                class="glyphicon glyphicon-new-window"></i> <?= $w->translate("Taasta parool");?> </a><a
+            href="registrations" class=""><i
+                class="glyphicon glyphicon-align-justify"></i> <?= $w->translate("Registreeru kliendiks");?> </a></div>
 </div>
-<div id="telli_uudiskiri"><h1 class="show-items">Telli uudiskiri</h1>
+<?
+if($lang == 'et_EE'):?>
 
-    <div class="hide-items">
-        <form action="https://www.piletimaailm.com/newsletter_subscriptions" method="post"
-              style="margin-top: 20px;">
-            <div id="subscribe-wrapper"><input class="otsifield" id="newsletter_subscription_email"
-                                               name="newsletter_subscription[email]"
-                                               placeholder="e-posti aadress" size="30" type="text"/><input
-                    class="btn btn-default btn-corner button" name="commit" type="submit" value="Telli"/>
+    <div id="telli_uudiskiri"><h1 class="show-items">Telli uudiskiri</h1>
 
-                <div class="clear"></div>
-            </div>
-        </form>
+        <div class="hide-items">
+            <form action="https://www.piletimaailm.com/newsletter_subscriptions" method="post"
+                  style="margin-top: 20px;">
+                <div id="subscribe-wrapper"><input class="otsifield" id="newsletter_subscription_email"
+                                                   name="newsletter_subscription[email]"
+                                                   placeholder="e-posti aadress" size="30" type="text"/><input
+                        class="btn btn-default btn-corner button" name="commit" type="submit" value="Telli"/>
+
+                    <div class="clear"></div>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+<?endif?>
 <div id="kuumpakkumine">
     <script language='JavaScript' type='text/javascript'><!--
         if (!document.phpAds_used) document.phpAds_used = ',';
