@@ -11,6 +11,7 @@ require 'controllers/language.php';
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
     <title><?= PROJECT_NAME ?></title>
+    <link href="assets/components/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/components/shop_base_1395698490.css" media="screen" rel="Stylesheet" type="text/css"/>
     <style>body {
             min-height: 2000px !important;
@@ -398,11 +399,11 @@ require 'controllers/language.php';
             <div class="clear"></div>
         </div>
         <a href="#" id="minu_piletimaailm_login_link"><i
-                class="glyphicon glyphicon-log-in"></i> <?= $w->translate("Logi sisse");?> </a><a
+                class="icon-fixed-width icon-signin icon-large"></i> <?= $w->translate("Logi sisse");?> </a><a
             href="password_reminders" class=""><i
-                class="glyphicon glyphicon-new-window"></i> <?= $w->translate("Taasta parool");?> </a><a
+                class="icon-fixed-width icon-ambulance icon-large"></i> <?= $w->translate("Taasta parool");?> </a><a
             href="registrations" class=""><i
-                class="glyphicon glyphicon-align-justify"></i> <?= $w->translate("Registreeru kliendiks");?> </a></div>
+                class="icon-fixed-width icon-align-justify icon-large"></i> <?= $w->translate("Registreeru kliendiks");?> </a></div>
 </div>
 <?
 if($lang == 'et_EE'):?>
