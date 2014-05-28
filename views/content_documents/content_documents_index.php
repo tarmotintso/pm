@@ -1,4 +1,3 @@
-<div id="content">
 <div id="contentArea"><h1 class="first">Müügipunktid</h1>
 
 <div id="content_document_description"><p>&nbsp;Leia lähim Piletimaailma müügipunkt kaardil, klikka
@@ -1381,4 +1380,3 @@
 
             <p><strong>Narva Astri keskus<br></strong>Tallinna mnt. 41<br>Avatud: Iga päev 10.00 - 21.00</p></div>
 <br style="clear: both;"></div>
-</div>

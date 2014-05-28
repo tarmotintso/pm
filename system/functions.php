@@ -26,8 +26,8 @@ function __autoload($className)
  */
 function __($text)
 {
-    //TODO: Write your own translation code here
-    echo $text;
+    $translation = $GLOBALS['w']->translate($text);
+    return $translation;
 }
 
 function debug($msg)

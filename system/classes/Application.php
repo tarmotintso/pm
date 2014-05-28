@@ -18,6 +18,7 @@ class Application
         ob_start();
         session_start();
 
+        $this->initialize_translation();
         $this->load_common_functions();
         $this->set_base_url();
         $this->load_config();
@@ -134,6 +135,30 @@ class Application
     private function init_db()
     {
         require 'system/database.php';
+    }
+
+    private function initialize_translation()
+    {
+        require 'classes/gettext.php';
+        require 'classes/streams.php';
+        if (isset($_GET['lang'])) {
+            $lang = $_GET['lang'];
+
+            // register the session and set the cookie
+            $_SESSION['lang'] = $lang;
+
+            setcookie('lang', $lang, time() + (3600 * 24 * 30));
+        } elseif (isset($_SESSION['lang'])) {
+            $lang = $_SESSION['lang'];
+        } elseif (isset($_COOKIE['lang'])) {
+            $lang = $_COOKIE['lang'];
+        } else { $lang = 'et_EE';
+            $_SESSION['lang'] = $lang;
+        }
+
+        $streamer = new FileReader('locale/' . $lang . '/LC_MESSAGES/piletimaailm.mo');
+        $GLOBALS['w'] = new gettext_reader($streamer, false);
+
     }
 
 }
