@@ -53,9 +53,13 @@ class Application
             exit();
         }
 
-        // Authenticate user, if controller requires it
-        if ($controller->requires_auth && !$controller->auth->logged_in) {
-            $controller->auth->require_auth();
+        //Authenticate user, if user actively logs in or if controller requires it
+        if ( (isset($_POST['email']) && isset($_POST['password']) ) || $controller->requires_auth && !$controller->auth->logged_in) {
+            if (!$controller->auth->require_auth()) {
+                $controller->errors=$controller->auth->errors;
+                $controller->controller='login';
+                $controller->action='index';
+            }
         }
 
         // Run the action
@@ -67,8 +71,7 @@ class Application
             // Check for and process POST ( executes $action_post() )
             if (isset($_POST) && !empty($_POST) && method_exists($controller, $controller->action . '_post')) {
                 $action_name = $controller->action . '_post';
-                if (!$controller->skip_main_action)
-                {
+                if (!$controller->skip_main_action) {
                     $controller->$action_name();
                 }
             }

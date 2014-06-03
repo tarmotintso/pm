@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -407,11 +406,30 @@
             </div>
         </div>
     </div>
-    <div id="minu_piletimaailm" class=""><h1>Minu Piletimaailm </h1>
 
+
+<!--    Sisse logitud "Minu piletimaailm div algus-->
+    <?if ($this->auth->logged_in):?>
+    <div id="minu_piletimaailm" class="active">
+        <h1>Minu Piletimaailm <i class="icon-fixed-width icon-heart"></i></h1>
+        <div class="minu_piletimaailm_items">
+
+            <p>Teretulemast, <strong class="nowrap"><?=$_SESSION['first_name'] . ' ' . $_SESSION['last_name'];?></strong>.</p>
+            <a href="/badgers" class=""><i class="icon-fixed-width icon-ticket icon-large"></i> Minu piletid</a>
+
+            <a href="/badgers/details" class=""><i class="icon-fixed-width icon-user icon-large"></i> Minu andmed</a>
+            <a href="<?=BASE_URL?>logout"><i class="icon-fixed-width icon-signout icon-large"></i> Logi välja</a>
+
+        </div>
+    </div>
+<!--    Sisse logitud "Minu piletimaailm div lõpp-->
+    <? else: ?>
+<!--    Välja logitud "Minu piletimaailm div algus-->
+    <div id="minu_piletimaailm" class="">
+        <h1>Minu Piletimaailm </h1>
         <div class="minu_piletimaailm_items">
             <div id="minu_piletimaailm_login" style="display: none">
-                <form action="/badgers" method="post">
+                <form method="post">
                     <div id="minu_piletimaailm_login_wrapper"><label class="menu">E-mail</label><input
                             class="menu" id="email" name="email" type="text" value=""/><label
                             class="menu">Parool</label><input
@@ -429,6 +447,9 @@
                     class="icon-fixed-width icon-align-justify icon-large"></i> <?= __("Registreeru kliendiks"); ?> </a>
         </div>
     </div>
+    <? endif; ?>
+<!--    Välja logitud "Minu piletimaailm div lõpp-->
+
     <?
     if (@$_SESSION['lang'] == 'et_EE'):?>
 

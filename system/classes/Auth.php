@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Class auth authenticates user and permits to check if the user has been logged in
  * Automatically loaded when the controller has $requires_auth property.
@@ -29,22 +30,29 @@ class Auth
         }
 
         // Authenticate by POST data
-        if (isset($_POST['username'])) {
-            $username = $_POST['username'];
+        if (isset($_POST['email']) && isset($_POST['password'])) {
+            $email = $_POST['email'];
             $password = $_POST['password'];
-            $user_id = get_one("SELECT user_id FROM user WHERE username = '$username' AND password = '$password'");
-            if (!empty($user_id)) {
-                $_SESSION['user_id'] = $user_id;
+            $sql = "SELECT id,password_hash, salt, first_name, last_name
+                         FROM clients
+                         WHERE email='$email'";
+            $user = get_first($sql);
+
+
+            if (!empty($user) && sha1($user['salt'].$password) == $user['password_hash']) {
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['first_name'] = $user['first_name'];
+                $_SESSION['last_name'] = $user['last_name'];
+                $this->logged_in = true;
                 return true;
             } else {
-                $errors[] = "Vale kasutajanimi või parool";
+                $this->error_title2 = 'Vigane kasutajanimi või parool';
+                $this->errors[] = "Vigane kasutajanimi või parool";
+
             }
         }
 
-        // Display the login form
-        require 'templates/auth_template.php';
 
-        // Prevent loading the requested controller (not authenticated)
-        exit();
     }
+
 }

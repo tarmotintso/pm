@@ -49,7 +49,7 @@
 </div>
 <!-- /container -->
 
-<div align="center"><a href="<?=BASE_URL?>"><img src="./assets/img/error.jpg" width="286" height="118"></a><span class="text"><br>
+<div align="center"><a href="<?=BASE_URL?>"><img src="<?=BASE_URL?>assets/img/error.jpg" width="286" height="118"></a><span class="text"><br>
 
     </span>
 

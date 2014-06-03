@@ -6,6 +6,7 @@ class Controller
     public $requires_auth = false;
     public $errors = array();
     public $error_title = '';
+    public $error_title2 = '';
     public $skip_main_action = false;
 
     function render($template)
@@ -16,9 +17,15 @@ class Controller
         // Load alerts
         $this->errors = is_array($this->errors) ? array_filter($this->errors) : NULL; //filter out null values from array
         if (!empty($this->errors)) {
-            ob_start();
-            include 'views/alerts/flash_error.php';
-            $errors2 = ob_get_clean();
+            if ($this->error_title2) {
+                ob_start();
+                include 'views/alerts/flash_error_single.php';
+                $errors2 = ob_get_clean();
+            } else {
+                ob_start();
+                include 'views/alerts/flash_error.php';
+                $errors2 = ob_get_clean();
+            }
         }
 
         // Load view
@@ -26,4 +33,4 @@ class Controller
     }
 
 
-} 
+}
