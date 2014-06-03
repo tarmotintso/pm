@@ -44,7 +44,8 @@ class Auth
                 $_SESSION['first_name'] = $user['first_name'];
                 $_SESSION['last_name'] = $user['last_name'];
                 $this->logged_in = true;
-                return true;
+                header('Location: /pm');
+                exit();
             } else {
                 $this->error_title2 = 'Vigane kasutajanimi või parool';
                 $this->errors[] = "Vigane kasutajanimi või parool";
