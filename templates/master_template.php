@@ -192,7 +192,7 @@
 <div class="col-md-3 col-xs-12">
 <div id="otsi">
     <div id="otsing_container">
-        <form action="https://www.piletimaailm.com/performances/search" id="otsingu-vorm" method="get"
+        <form action=<?=BASE_URL?>search id="otsingu-vorm" method="post"
               style="margin:0px;padding:0px;">
             <div id="otsing">
                 <div id="otsing-fullname-label" style="display: none;"><h2>Ürituste otsing</h2><label

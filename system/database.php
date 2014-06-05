@@ -61,7 +61,7 @@ function get_all($sql)
 	while (($result[] = pg_fetch_assoc($q)) || array_pop($result)) {
 		;
 	}
-	return $result;
+    return empty($result) ? array() : $result;
 }
 
 function get_first($sql)
