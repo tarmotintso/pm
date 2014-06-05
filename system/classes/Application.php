@@ -132,7 +132,11 @@ class Application
 
     private function handle_routing()
     {
-        //TODO: write here your own code if you want to manipulate controller, action
+        // Support organizers/8-tallinn
+        if($this->controller=='organizers' and strpos($this->action,'-')>0){
+            list($this->params[0],$city_name) = explode('-',$this->action);
+            $this->action = 'view';
+        }
     }
 
     private function init_db()

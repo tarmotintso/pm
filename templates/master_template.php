@@ -52,93 +52,93 @@
             <ul class="theatres">
                 <li class="clickable " id="menu_1"><a href="#">Eesti kontsert</a></li>
                 <li class="clickable level2 " id="menu_2"><a
-                        href="https://www.piletimaailm.com/organizers/8-tallinn">Tallinn</a></li>
+                        href="<?= BASE_URL ?>organizers/8-tallinn">Tallinn</a></li>
                 <li class="clickable level2 " id="menu_3"><a
-                        href="https://www.piletimaailm.com/organizers/9-tartu">Tartu</a></li>
+                        href="<?= BASE_URL ?>organizers/9-tartu">Tartu</a></li>
                 <li class="clickable level2 " id="menu_4"><a
-                        href="https://www.piletimaailm.com/organizers/10-parnu">Pärnu</a></li>
+                        href="<?= BASE_URL ?>organizers/10-parnu">Pärnu</a></li>
                 <li class="clickable level2 " id="menu_5"><a
-                        href="https://www.piletimaailm.com/organizers/11-johvi">Jõhvi</a></li>
+                        href="<?= BASE_URL ?>organizers/11-johvi">Jõhvi</a></li>
                 <li class="clickable " id="menu_6"><a
-                        href="https://www.piletimaailm.com/organizers/14-rahvusooper-estonia">Rahvusooper
+                        href="<?= BASE_URL ?>organizers/14-rahvusooper-estonia">Rahvusooper
                         Estonia</a></li>
                 <li class="clickable " id="menu_7"><a
-                        href="https://www.piletimaailm.com/organizers/7-eesti-draamateater">Eesti
+                        href="<?= BASE_URL ?>organizers/7-eesti-draamateater">Eesti
                         Draamateater</a></li>
-                <li class="clickable " id="menu_8"><a href="https://www.piletimaailm.com/organizers/15-no99">NO99</a>
+                <li class="clickable " id="menu_8"><a href="<?= BASE_URL ?>organizers/15-no99">NO99</a>
                 </li>
                 <li class="clickable level2 " id="menu_49"><a
-                        href="https://www.piletimaailm.com/organizers/473-jazziklubi">Jazziklubi</a></li>
+                        href="<?= BASE_URL ?>organizers/473-jazziklubi">Jazziklubi</a></li>
                 <li class="clickable " id="menu_9"><a
-                        href="https://www.piletimaailm.com/organizers/12-endla-teater">Endla Teater</a></li>
+                        href="<?= BASE_URL ?>organizers/12-endla-teater">Endla Teater</a></li>
                 <li class="clickable " id="menu_10"><a
-                        href="https://www.piletimaailm.com/organizers/18-ugala-teater">Ugala Teater</a></li>
+                        href="<?= BASE_URL ?>organizers/18-ugala-teater">Ugala Teater</a></li>
                 <li class="clickable " id="menu_11"><a
-                        href="https://www.piletimaailm.com/organizers/17-rakvere-teater">Rakvere Teater</a></li>
+                        href="<?= BASE_URL ?>organizers/17-rakvere-teater">Rakvere Teater</a></li>
                 <li class="clickable " id="menu_12"><a
-                        href="https://www.piletimaailm.com/organizers/13-teater-vanemuine">Teater Vanemuine </a>
+                        href="<?= BASE_URL ?>organizers/13-teater-vanemuine">Teater Vanemuine </a>
                 </li>
                 <li class="clickable " id="menu_13"><a
-                        href="https://www.piletimaailm.com/organizers/70-vana-baskini-teater">Vana Baskini
+                        href="<?= BASE_URL ?>organizers/70-vana-baskini-teater">Vana Baskini
                         Teater</a></li>
                 <li class="clickable " id="menu_15"><a
-                        href="https://www.piletimaailm.com/organizers/26-theatrum">Theatrum</a></li>
+                        href="<?= BASE_URL ?>organizers/26-theatrum">Theatrum</a></li>
                 <li class="clickable " id="menu_16"><a
-                        href="https://www.piletimaailm.com/organizers/34-vat-teater">VAT Teater</a></li>
-                <li class="clickable " id="menu_17"><a href="https://www.piletimaailm.com/organizers/154-raaam">R.A.A.A.M.</a>
+                        href="<?= BASE_URL ?>organizers/34-vat-teater">VAT Teater</a></li>
+                <li class="clickable " id="menu_17"><a href="<?= BASE_URL ?>organizers/154-raaam">R.A.A.A.M.</a>
                 </li>
                 <li class="clickable " id="menu_18"><a
-                        href="https://www.piletimaailm.com/organizers/151-kuressaare-linnateater">Kuressaare
+                        href="<?= BASE_URL ?>organizers/151-kuressaare-linnateater">Kuressaare
                         Linnateater</a></li>
                 <li class="clickable " id="menu_50"><a
-                        href="https://www.piletimaailm.com/organizers/143-vene-teater">Vene Teater</a></li>
+                        href="<?= BASE_URL ?>organizers/143-vene-teater">Vene Teater</a></li>
                 <li class="clickable " id="menu_21"><a
-                        href="https://www.piletimaailm.com/organizers/150-komoodiateater">Komöödiateater</a>
+                        href="<?= BASE_URL ?>organizers/150-komoodiateater">Komöödiateater</a>
                 </li>
                 <li class="clickable " id="menu_73"><a
-                        href="https://www.piletimaailm.com/organizers/456-tartu-uus-teater">Tartu Uus Teater</a>
+                        href="<?= BASE_URL ?>organizers/456-tartu-uus-teater">Tartu Uus Teater</a>
                 </li>
                 <li class="clickable " id="menu_33"><a
-                        href="https://www.piletimaailm.com/organizers/406-von-krahli-teater">Von Krahli
+                        href="<?= BASE_URL ?>organizers/406-von-krahli-teater">Von Krahli
                         Teater</a></li>
-                <li class="clickable " id="menu_38"><a href="https://www.piletimaailm.com/organizers/161-erso">ERSO</a>
-                </li>
+                <li class="clickable " id="menu_38"><a href="<?= BASE_URL ?>organizers/161-erso">ERSO</a>
+                </li
                 <li class="clickable " id="menu_58"><a
-                        href="https://www.piletimaailm.com/organizers/144-emajoe-suveteater">Emajõe
+                        href="<?= BASE_URL ?>organizers/144-emajoe-suveteater">Emajõe
                         Suveteater </a></li>
                 <li class="clickable " id="menu_60"><a
-                        href="https://www.piletimaailm.com/organizers/235-parnu-ooper">Pärnu Ooper</a></li>
+                        href="<?= BASE_URL ?>organizers/235-parnu-ooper">Pärnu Ooper</a></li>
                 <li class="clickable " id="menu_68"><a
-                        href="https://www.piletimaailm.com/organizers/352-projektiteater-kell-kumme">Projektiteater
+                        href="<?= BASE_URL ?>organizers/352-projektiteater-kell-kumme">Projektiteater
                         Kell Kümme</a></li>
                 <li class="clickable " id="menu_71"><a
-                        href="https://www.piletimaailm.com/organizers/581-tallinna-teletorn">Tallinna
+                        href="<?= BASE_URL ?>organizers/581-tallinna-teletorn">Tallinna
                         Teletorn</a></li>
                 <li class="clickable " id="menu_77"><a
-                        href="https://www.piletimaailm.com/organizers/16-paide-kultuurikeskus">Paide
+                        href="<?= BASE_URL ?>organizers/16-paide-kultuurikeskus">Paide
                         Kultuurikeskus</a></li>
                 <li class="clickable " id="menu_97"><a
-                        href="https://www.piletimaailm.com/organizers/683-kose-kultuurikeskus">Kose
+                        href="<?= BASE_URL ?>organizers/683-kose-kultuurikeskus">Kose
                         Kultuurikeskus</a></li>
                 <li class="clickable " id="menu_81"><a
-                        href="https://www.piletimaailm.com/organizers/502-parnu-linnaorkester">Pärnu
+                        href="<?= BASE_URL ?>organizers/502-parnu-linnaorkester">Pärnu
                         Linnaorkester</a></li>
                 <li class="clickable " id="menu_88"><a
-                        href="https://www.piletimaailm.com/organizers/162-t-teater">T-Teater</a></li>
+                        href="<?= BASE_URL ?>organizers/162-t-teater">T-Teater</a></li>
                 <li class="clickable " id="menu_91"><a
-                        href="https://www.piletimaailm.com/organizers/626-tallinna-kammerteater">Tallinna
+                        href="<?= BASE_URL ?>organizers/626-tallinna-kammerteater">Tallinna
                         Kammerteater</a></li>
                 <li class="clickable " id="menu_93"><a
-                        href="https://www.piletimaailm.com/organizers/142-viljandi-laste-ja-noorteteater-reky">Viljandi
+                        href="<?= BASE_URL ?>organizers/142-viljandi-laste-ja-noorteteater-reky">Viljandi
                         Laste- ja Noorteteater “REKY”</a></li>
                 <li class="clickable " id="menu_94"><a
-                        href="https://www.piletimaailm.com/organizers/431-tallinna-tantsuteater">Tallinna
+                        href="<?= BASE_URL ?>organizers/431-tallinna-tantsuteater">Tallinna
                         Tantsuteater</a></li>
                 <li class="clickable " id="menu_96"><a
-                        href="https://www.piletimaailm.com/organizers/627-mtu-seasaare-naitemangu-selts">MTÜ
+                        href="<?= BASE_URL ?>organizers/627-mtu-seasaare-naitemangu-selts">MTÜ
                         Seasaare Näitemängu Selts</a></li>
                 <li class="clickable " id="menu_98"><a
-                        href="https://www.piletimaailm.com/organizers/362-polygon-teater">Polygon Teater</a>
+                        href="<?= BASE_URL ?>organizers/362-polygon-teater">Polygon Teater</a>
                 </li>
             </ul>
         </div>
