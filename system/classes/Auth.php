@@ -41,8 +41,8 @@ class Auth
 
             if (!empty($user) && sha1($user['salt'].$password) == $user['password_hash']) {
                 $_SESSION['user_id'] = $user['id'];
-                $_SESSION['first_name'] = $user['first_name'];
-                $_SESSION['last_name'] = $user['last_name'];
+                $_SESSION['first_name'] = ucfirst(strtolower($user['first_name'])); //ucfirst makes string first character uppercase
+                $_SESSION['last_name'] = ucfirst(strtolower($user['last_name'])); //strtolower makes string lowercase
                 $this->logged_in = true;
                 header('Location: /pm');
                 exit();

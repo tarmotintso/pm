@@ -150,12 +150,13 @@ function update($table, array $data, $where)
 {
 	global $db;
 	if ($table and is_array($data) and !empty($data)) {
-		$values = implode(',', escape($data));
-
+        $columns = implode(',',array_keys($data));
+        $values = implode(',', escape($data));
+        // ignore error "<expression> expected, got '('"
 		if (isset($where)) {
-			$sql = "UPDATE `{$table}` SET {$values} WHERE {$where}";
+			$sql = "UPDATE {$table} SET ($columns)= ($values) WHERE {$where}";
 		} else {
-			$sql = "UPDATE `{$table}` SET {$values}";
+			$sql = "UPDATE {$table} SET ($columns) = ($values)";
 		}
 		$id = pg_query($db, $sql) or db_error_out();
 		return ($id > 0) ? $id : FALSE;

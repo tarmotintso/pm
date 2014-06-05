@@ -408,47 +408,47 @@
     </div>
 
 
-<!--    Sisse logitud "Minu piletimaailm div algus-->
+    <!--    Sisse logitud "Minu piletimaailm div algus-->
     <?if ($this->auth->logged_in):?>
-    <div id="minu_piletimaailm" class="active">
-        <h1>Minu Piletimaailm <i class="icon-fixed-width icon-heart"></i></h1>
-        <div class="minu_piletimaailm_items">
+        <div id="minu_piletimaailm" class="active">
+            <h1>Minu Piletimaailm <i class="icon-fixed-width icon-heart"></i></h1>
+            <div class="minu_piletimaailm_items">
+                <p>Teretulemast, <strong class="nowrap active"><?=$_SESSION['first_name'] . ' ' . $_SESSION['last_name'];?></strong>.</p>
 
-            <p>Teretulemast, <strong class="nowrap"><?=$_SESSION['first_name'] . ' ' . $_SESSION['last_name'];?></strong>.</p>
-            <a href="/badgers" class=""><i class="icon-fixed-width icon-ticket icon-large"></i> Minu piletid</a>
+                <a href="<?=BASE_URL?>badgers" class="<?=$controller == 'badgers' && $action == 'index' ? 'selected' : ''?>"><i class="icon-fixed-width icon-ticket icon-large"></i> Minu piletid</a>
 
-            <a href="/badgers/details" class=""><i class="icon-fixed-width icon-user icon-large"></i> Minu andmed</a>
-            <a href="<?=BASE_URL?>logout"><i class="icon-fixed-width icon-signout icon-large"></i> Logi välja</a>
+                <a href="<?=BASE_URL?>badgers/details" class="<?=$controller == 'badgers' && $action == 'details' ? 'selected' : ''?>"><i class="icon-fixed-width icon-user icon-large"></i> Minu andmed</a>
+                <a href="<?=BASE_URL?>logout"><i class="icon-fixed-width icon-signout icon-large"></i> Logi välja</a>
 
-        </div>
-    </div>
-<!--    Sisse logitud "Minu piletimaailm div lõpp-->
-    <? else: ?>
-<!--    Välja logitud "Minu piletimaailm div algus-->
-    <div id="minu_piletimaailm" class="">
-        <h1>Minu Piletimaailm </h1>
-        <div class="minu_piletimaailm_items">
-            <div id="minu_piletimaailm_login" style="display: none">
-                <form method="post">
-                    <div id="minu_piletimaailm_login_wrapper"><label class="menu">E-mail</label><input
-                            class="menu" id="email" name="email" type="text" value=""/><label
-                            class="menu">Parool</label><input
-                            class="menu" id="password" name="password" type="password" value=""/><input
-                            class="btn btn-black pull-right button" name="commit" type="submit"
-                            value="Logi sisse"/></div>
-                </form>
-                <div class="clear"></div>
             </div>
-            <a href="#" id="minu_piletimaailm_login_link"><i
-                    class="icon-fixed-width icon-signin icon-large"></i> <?= __("Logi sisse"); ?> </a><a
-                href="<?= BASE_URL ?>password_reminders" class=""><i
-                    class="icon-fixed-width icon-ambulance icon-large"></i> <?= __("Taasta parool"); ?> </a><a
-                href="<?= BASE_URL ?>registrations/form" class=""><i
-                    class="icon-fixed-width icon-align-justify icon-large"></i> <?= __("Registreeru kliendiks"); ?> </a>
         </div>
-    </div>
+        <!--    Sisse logitud "Minu piletimaailm div lõpp-->
+    <? else: ?>
+        <!--    Välja logitud "Minu piletimaailm div algus-->
+        <div id="minu_piletimaailm" class="">
+            <h1>Minu Piletimaailm </h1>
+            <div class="minu_piletimaailm_items">
+                <div id="minu_piletimaailm_login" style="display: none">
+                    <form method="post">
+                        <div id="minu_piletimaailm_login_wrapper"><label class="menu">E-mail</label><input
+                                class="menu" id="email" name="email" type="text" value=""/><label
+                                class="menu">Parool</label><input
+                                class="menu" id="password" name="password" type="password" value=""/><input
+                                class="btn btn-black pull-right button" name="commit" type="submit"
+                                value="Logi sisse"/></div>
+                    </form>
+                    <div class="clear"></div>
+                </div>
+                <a href="#" id="minu_piletimaailm_login_link"><i
+                        class="icon-fixed-width icon-signin icon-large"></i> <?= __("Logi sisse"); ?> </a><a
+                    href="<?= BASE_URL ?>password_reminders" class="<?=$controller == 'password_reminders' && $action == 'index' ? 'selected' : ''?>"><i
+                        class="icon-fixed-width icon-ambulance icon-large"></i> <?= __("Taasta parool"); ?> </a><a
+                    href="<?= BASE_URL ?>registrations/form" class="<?=$controller == 'registrations' && $action == 'form' ? 'selected' : ''?>"><i
+                        class="icon-fixed-width icon-align-justify icon-large"></i> <?= __("Registreeru kliendiks"); ?> </a>
+            </div>
+        </div>
     <? endif; ?>
-<!--    Välja logitud "Minu piletimaailm div lõpp-->
+    <!--    Välja logitud "Minu piletimaailm div lõpp-->
 
     <?
     if (@$_SESSION['lang'] == 'et_EE'):?>
