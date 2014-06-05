@@ -58,7 +58,9 @@ class organizers extends Controller
         $this->nextlink = ($this->page < $this->pages) ? '<a href="' . $_SERVER['PHP_SELF'] . '?page=' . ($this->page + 1) . '" title="Järgmine">Järgmine</a>' : '';
 
         $newArray = array();
-        $sql_command = "SELECT * FROM events WHERE type='Performance' AND state='on_sale' AND organizer_id ='$id' ORDER BY time LIMIT " . $this->max_per_page . " OFFSET " . $this->offset . "";
+        $sql_command = "SELECT * FROM events WHERE type='Performance' AND state='on_sale' AND organizer_id ='$id' AND (web_sales_start IS NULL
+                                   OR web_sales_start <= NOW())
+                              AND ((time - (web_sales_end||' seconds')::interval) > NOW()) ORDER BY time LIMIT " . $this->max_per_page . " OFFSET " . $this->offset . "";
         $this->performances = get_all($sql_command);
         if (!empty($this->performances)) {
             foreach ($this->performances as $performance) {
@@ -155,14 +157,21 @@ class organizers extends Controller
         // The "forward" link
         $this->nextlink = ($this->page < $this->pages) ? '<a href="' . $_SERVER['PHP_SELF'] . '?page=' . ($this->page + 1) . '" title="Järgmine">Järgmine</a>' : '';
 
-        $sql_command = "SELECT * FROM events WHERE type='Event' AND state='on_sale' AND organizer_id ='{$this->params[0]}' ORDER BY name LIMIT " . $this->max_per_page . " OFFSET " . $this->offset . "";
+        $sql_command = "SELECT * FROM events E WHERE type='Event' AND state='on_sale' AND organizer_id ='{$this->params[0]}' AND (web_sales_start IS NULL
+                                   OR web_sales_start <= NOW())  AND (SELECT COUNT(event_id) FROM events X WHERE X.event_id = E.id) > 0
+ORDER BY name LIMIT " . $this->max_per_page . " OFFSET " . $this->offset . "";
         $this->event_pages = get_all($sql_command);
         $newArray = array();
         if (!empty($this->event_pages)) {
             foreach ($this->event_pages as $event_page) {
                 $event_page['hall_plan_id'] = get_col("SELECT hall_plan_id FROM events WHERE type='Performance' AND state='on_sale' AND organizer_id ='{$this->params[0]}' AND event_id = '{$event_page['id']}'");
                 $event_page['all_hall_plan_id'] =  implode(", ", $event_page['hall_plan_id']);
-                $event_page['seats'] = get_one("SELECT SUM(count_all), hall_plan_id FROM ( SELECT COUNT(DISTINCT hall_elements.id) AS count_all, hall_elements.hall_plan_id FROM hall_elements WHERE hall_elements.hall_plan_id IN ({$event_page['all_hall_plan_id']}) AND ( hall_elements.type = 'SeatMarked' ) AND ( hall_elements.sale_permission_web = TRUE ) AND ( COALESCE( (SELECT st.type FROM seat_transactions st WHERE st.seat_id = hall_elements.id AND st.created_at = (SELECT MAX(st2.created_at) FROM seat_transactions st2 WHERE st2.seat_id = hall_elements.id)), 'SeatTransactionFree' ) IN ( E'SeatTransactionFree',E'SeatTransactionBookingCancellation', E'SeatTransactionBookingExpiry',E'SeatTransactionRefund', E'SeatTransactionReservationCancellation') ) GROUP BY hall_elements.hall_plan_id UNION ALL SELECT -COUNT(DISTINCT hall_elements.id) AS count_all, hall_elements.hall_plan_id FROM hall_elements WHERE hall_elements.hall_plan_id IN ({$event_page['all_hall_plan_id']}) AND ( hall_elements.type = 'SeatUnmarked' ) AND ( (SELECT st.type FROM seat_transactions st WHERE st.seat_id = hall_elements.id AND st.created_at = (SELECT MAX(st2.created_at) FROM seat_transactions st2 WHERE st2.seat_id = hall_elements.id)) NOT IN ( E'SeatTransactionFree',E'SeatTransactionBookingCancellation', E'SeatTransactionBookingExpiry',E'SeatTransactionRefund', E'SeatTransactionReservationCancellation') ) GROUP BY hall_elements.hall_plan_id UNION ALL SELECT SUM(unmarked_seat_count) AS count_all, hall_areas.hall_plan_id FROM hall_areas WHERE hall_areas.hall_plan_id IN ({$event_page['all_hall_plan_id']}) GROUP BY hall_areas.hall_plan_id ) AS x GROUP BY hall_plan_id;");
+                if (!($event_page['all_hall_plan_id'])) {
+                    $event_page['seats'] = 0;
+                }
+                else {
+                    $event_page['seats'] = get_one("SELECT SUM(count_all), hall_plan_id FROM ( SELECT COUNT(DISTINCT hall_elements.id) AS count_all, hall_elements.hall_plan_id FROM hall_elements WHERE hall_elements.hall_plan_id IN ({$event_page['all_hall_plan_id']}) AND ( hall_elements.type = 'SeatMarked' ) AND ( hall_elements.sale_permission_web = TRUE ) AND ( COALESCE( (SELECT st.type FROM seat_transactions st WHERE st.seat_id = hall_elements.id AND st.created_at = (SELECT MAX(st2.created_at) FROM seat_transactions st2 WHERE st2.seat_id = hall_elements.id)), 'SeatTransactionFree' ) IN ( E'SeatTransactionFree',E'SeatTransactionBookingCancellation', E'SeatTransactionBookingExpiry',E'SeatTransactionRefund', E'SeatTransactionReservationCancellation') ) GROUP BY hall_elements.hall_plan_id UNION ALL SELECT -COUNT(DISTINCT hall_elements.id) AS count_all, hall_elements.hall_plan_id FROM hall_elements WHERE hall_elements.hall_plan_id IN ({$event_page['all_hall_plan_id']}) AND ( hall_elements.type = 'SeatUnmarked' ) AND ( (SELECT st.type FROM seat_transactions st WHERE st.seat_id = hall_elements.id AND st.created_at = (SELECT MAX(st2.created_at) FROM seat_transactions st2 WHERE st2.seat_id = hall_elements.id)) NOT IN ( E'SeatTransactionFree',E'SeatTransactionBookingCancellation', E'SeatTransactionBookingExpiry',E'SeatTransactionRefund', E'SeatTransactionReservationCancellation') ) GROUP BY hall_elements.hall_plan_id UNION ALL SELECT SUM(unmarked_seat_count) AS count_all, hall_areas.hall_plan_id FROM hall_areas WHERE hall_areas.hall_plan_id IN ({$event_page['all_hall_plan_id']}) GROUP BY hall_areas.hall_plan_id ) AS x GROUP BY hall_plan_id;");
+                }
                 $event_page['dates'] = get_col("SELECT to_char(time, 'DD.MM') AS aeg FROM events WHERE event_id='{$event_page['id']}' order by time");
                 $event_page['locations'] = get_col("SELECT D.name FROM (hall_plans A JOIN events B ON A.id = B.hall_plan_id) JOIN halls C ON A.hall_id = C.id JOIN venues D ON C.venue_id = D.id WHERE B.state = 'on_sale' AND B.id='{$event_page['id']}'");
                 $event_page['normalprices_min'] = get_one("SELECT MIN(P.value) FROM events E
